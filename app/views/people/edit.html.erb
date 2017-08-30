@@ -1,0 +1,17 @@
+<h1>Edit Contact</h1>
+
+<%= form_for @people do |f| %>
+<%= f.label :Name %>
+<%= f.text_field :name, placeholder: 'First and Last name', required: true %>
+<%= f.label :Age %>
+<%= f.text_field :age, placeholder:'Age'%>
+<%= f.label :'Eye Color' %>
+<%= f.text_field :eyes, placeholder:'Eye Color'%>
+<%= f.label :'Hair Color' %>
+<%= f.text_field :hair, placeholder:'Hair Color'%>
+<%= f.label :Gender%>
+<%= f.text_field :gender, placeholder:'Gender'%>
+<%= f.label :Living%>
+<%= f.check_box :alive%>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,18 @@
+<h1>
+  <%= @people.name %>
+</h1>
+
+<i>Age: <%= @people.age %> </i>
+<br />
+<i>Hair: <%= @people.hair %> </i>
+<hr />
+<i>Eye color: <%= @people.eyes %></i>
+<br />
+<i>Gender: <%= @people.gender %></i>
+<br />
+<i>Living? <%= @people.alive %></i>
+<br />
+
+<%= link_to 'edit', edit_person_path(@people)%>
+<%= link_to 'back', people_path %>
+
